@@ -51,30 +51,3 @@ public extension Encodable
         }
     }
 }
-
-// MARK: - Errors
-
-/// Enumerates errors in the Encodable framework.
-public enum EncodableError: Int, ErrorType
-{
-    /// Could not convert from `Any?` to the encoded type in `decodeAny(:)`.
-    case CouldNotConvertAnyToEncoded
-    
-    /// A Cocoa operation failed, but an error value was not provided.
-    case UnknownCocoaError
-    
-    /// The error domain for Encodable errors.
-    public static let Domain = "EncodableErrorDomain"
-    
-    /// The error domain.
-    public var _domain: String
-    {
-        return EncodableError.Domain
-    }
-    
-    /// The error code.
-    public var _code: Int
-    {
-        return self.rawValue
-    }
-}

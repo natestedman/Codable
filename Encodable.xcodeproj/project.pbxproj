@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		439973481BD33F360005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
+		4399734A1BD345920005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
 		43B42F341BD3186600D84094 /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
 		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		439973471BD33F360005CEBE /* PropertyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
+		439973491BD345920005CEBE /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		43B42F301BD3186600D84094 /* Encodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B42F331BD3186600D84094 /* Encodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encodable.h; sourceTree = "<group>"; };
 		43B42F351BD3186600D84094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				43B42F331BD3186600D84094 /* Encodable.h */,
 				43B42F3B1BD319FC00D84094 /* Encodable.swift */,
+				439973491BD345920005CEBE /* Error.swift */,
 				43B9C5611BD33D8C00DD14A2 /* JSON.swift */,
 				439973471BD33F360005CEBE /* PropertyList.swift */,
 				43B42F351BD3186600D84094 /* Info.plist */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4399734A1BD345920005CEBE /* Error.swift in Sources */,
 				43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */,
 				43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */,
 				439973481BD33F360005CEBE /* PropertyList.swift in Sources */,
