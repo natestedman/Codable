@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43B42F341BD3186600D84094 /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
+		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		43B42F331BD3186600D84094 /* Encodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encodable.h; sourceTree = "<group>"; };
 		43B42F351BD3186600D84094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B42F3B1BD319FC00D84094 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		43B9C5611BD33D8C00DD14A2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				43B42F331BD3186600D84094 /* Encodable.h */,
 				43B42F3B1BD319FC00D84094 /* Encodable.swift */,
+				43B9C5611BD33D8C00DD14A2 /* JSON.swift */,
 				43B42F351BD3186600D84094 /* Info.plist */,
 			);
 			path = Encodable;
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */,
+				43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +287,7 @@
 				43B42F3A1BD3186600D84094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
