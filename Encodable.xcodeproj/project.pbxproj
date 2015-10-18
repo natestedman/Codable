@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		439973481BD33F360005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
 		4399734A1BD345920005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
+		439973581BD347AB0005CEBE /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439973591BD347AB0005CEBE /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
+		4399735A1BD347AB0005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
+		4399735B1BD347AB0005CEBE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
+		4399735C1BD347AB0005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
 		43B42F341BD3186600D84094 /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
 		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
@@ -17,6 +22,7 @@
 /* Begin PBXFileReference section */
 		439973471BD33F360005CEBE /* PropertyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
 		439973491BD345920005CEBE /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		439973501BD3470C0005CEBE /* Encodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B42F301BD3186600D84094 /* Encodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B42F331BD3186600D84094 /* Encodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encodable.h; sourceTree = "<group>"; };
 		43B42F351BD3186600D84094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +31,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4399734C1BD3470C0005CEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B42F2C1BD3186600D84094 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				43B42F301BD3186600D84094 /* Encodable.framework */,
+				439973501BD3470C0005CEBE /* Encodable.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +81,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4399734D1BD3470C0005CEBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439973581BD347AB0005CEBE /* Encodable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B42F2D1BD3186600D84094 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +100,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4399734F1BD3470C0005CEBE /* Encodable-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439973551BD3470C0005CEBE /* Build configuration list for PBXNativeTarget "Encodable-iOS" */;
+			buildPhases = (
+				4399734B1BD3470C0005CEBE /* Sources */,
+				4399734C1BD3470C0005CEBE /* Frameworks */,
+				4399734D1BD3470C0005CEBE /* Headers */,
+				4399734E1BD3470C0005CEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Encodable-iOS";
+			productName = Encodable;
+			productReference = 439973501BD3470C0005CEBE /* Encodable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		43B42F2F1BD3186600D84094 /* Encodable-OSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable-OSX" */;
@@ -106,6 +146,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nate Stedman";
 				TargetAttributes = {
+					4399734F1BD3470C0005CEBE = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					43B42F2F1BD3186600D84094 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -124,11 +167,19 @@
 			projectRoot = "";
 			targets = (
 				43B42F2F1BD3186600D84094 /* Encodable-OSX */,
+				4399734F1BD3470C0005CEBE /* Encodable-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4399734E1BD3470C0005CEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B42F2E1BD3186600D84094 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +190,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4399734B1BD3470C0005CEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4399735B1BD347AB0005CEBE /* JSON.swift in Sources */,
+				4399735A1BD347AB0005CEBE /* Error.swift in Sources */,
+				4399735C1BD347AB0005CEBE /* PropertyList.swift in Sources */,
+				439973591BD347AB0005CEBE /* Encodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B42F2B1BD3186600D84094 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +215,47 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		439973561BD3470C0005CEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Encodable/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
+				PRODUCT_NAME = Encodable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		439973571BD3470C0005CEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Encodable/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
+				PRODUCT_NAME = Encodable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		43B42F361BD3186600D84094 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -279,6 +382,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		439973551BD3470C0005CEBE /* Build configuration list for PBXNativeTarget "Encodable-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439973561BD3470C0005CEBE /* Debug */,
+				439973571BD3470C0005CEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		43B42F2A1BD3186600D84094 /* Build configuration list for PBXProject "Encodable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
