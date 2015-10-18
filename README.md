@@ -1,6 +1,6 @@
 # Encodable
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Github Releases](https://img.shields.io/github/downloads/atom/atom/latest/total.svg)](https://github.com/natestedman/Encodable/releases) [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Github Releases](https://img.shields.io/github/downloads/natestedman/Encodable/latest/total.svg)](https://github.com/natestedman/Encodable/releases) [![GitHub license](https://img.shields.io/github/license/natestedman/Encodable.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 A minimal encoding and decoding protocol for Swift, with built-in JSON and property list support.
 
