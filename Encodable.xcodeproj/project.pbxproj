@@ -78,9 +78,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		43B42F2F1BD3186600D84094 /* Encodable */ = {
+		43B42F2F1BD3186600D84094 /* Encodable-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable" */;
+			buildConfigurationList = 43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable-OSX" */;
 			buildPhases = (
 				43B42F2B1BD3186600D84094 /* Sources */,
 				43B42F2C1BD3186600D84094 /* Frameworks */,
@@ -91,7 +91,7 @@
 			);
 			dependencies = (
 			);
-			name = Encodable;
+			name = "Encodable-OSX";
 			productName = Encodable;
 			productReference = 43B42F301BD3186600D84094 /* Encodable.framework */;
 			productType = "com.apple.product-type.framework";
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43B42F2F1BD3186600D84094 /* Encodable */,
+				43B42F2F1BD3186600D84094 /* Encodable-OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Encodable;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -271,7 +271,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Encodable;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -288,7 +288,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable" */ = {
+		43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43B42F391BD3186600D84094 /* Debug */,
