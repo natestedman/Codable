@@ -16,6 +16,10 @@ public enum EncodableError: Int, ErrorType
     /// Could not convert from `Any?` to the encoded type in `decodeAny(:)`.
     case CouldNotConvertAnyToEncoded
     
+    /// Could not convert the encoded representation of the type to `AnyObject`.
+    /// This can occur while using the JSON and property list extensions.
+    case CouldNotConvertEncodedToAnyObject
+    
     /// A Cocoa operation failed, but an error value was not provided.
     case UnknownCocoaError
     
