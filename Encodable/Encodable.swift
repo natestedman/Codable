@@ -14,17 +14,17 @@
 public protocol Encodable
 {
     /// The type that the data structures encodes to and decodes from.
-    typealias EncodedType
+    typealias Encoded
     
     /**
     Decodes a value, if possible.
     
     - parameter encoded: The encoded data.
     */
-    static func decode(encoded: EncodedType) throws -> Self
+    static func decode(encoded: Encoded) throws -> Self
     
     /// Encodes a value to data.
-    func encode() -> EncodedType
+    func encode() -> Encoded
 }
 
 // MARK: - Extensions
@@ -39,7 +39,7 @@ public extension Encodable
     */
     public static func decodeAny(any: Any?) throws -> Self
     {
-        if let encoded = any as? EncodedType
+        if let encoded = any as? Encoded
         {
             return try decode(encoded)
         }

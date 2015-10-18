@@ -11,7 +11,7 @@
 import Foundation
 
 // MARK: - AnyObject
-public extension Encodable where EncodedType: AnyObject
+public extension Encodable where Encoded: AnyObject
 {
     /**
     Decodes from JSON data, if possible.
@@ -39,7 +39,7 @@ public extension Encodable where EncodedType: AnyObject
 }
 
 // MARK: - Array
-public extension Encodable where EncodedType == [AnyObject]
+public extension Encodable where Encoded == [AnyObject]
 {
     /**
     Decodes from JSON data, if possible.
@@ -67,7 +67,7 @@ public extension Encodable where EncodedType == [AnyObject]
 }
 
 // MARK: - Dictionary
-public extension Encodable where EncodedType == [String:AnyObject]
+public extension Encodable where Encoded == [String:AnyObject]
 {
     /**
     Decodes from JSON data, if possible.
