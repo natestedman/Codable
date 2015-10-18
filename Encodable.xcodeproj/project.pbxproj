@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		43B42F341BD3186600D84094 /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43B42F301BD3186600D84094 /* Encodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B42F331BD3186600D84094 /* Encodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encodable.h; sourceTree = "<group>"; };
 		43B42F351BD3186600D84094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B42F3B1BD319FC00D84094 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				43B42F331BD3186600D84094 /* Encodable.h */,
+				43B42F3B1BD319FC00D84094 /* Encodable.swift */,
 				43B42F351BD3186600D84094 /* Info.plist */,
 			);
 			path = Encodable;
@@ -90,6 +93,7 @@
 		43B42F271BD3186600D84094 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nate Stedman";
 				TargetAttributes = {
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +228,7 @@
 		43B42F391BD3186600D84094 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -235,12 +241,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		43B42F3A1BD3186600D84094 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
