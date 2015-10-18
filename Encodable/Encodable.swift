@@ -10,6 +10,8 @@
 
 import Foundation
 
+// MARK: - Encodable
+
 /// A protocol that data structures can use to encode and decode themselves.
 public protocol Encodable
 {
@@ -25,4 +27,50 @@ public protocol Encodable
     
     /// Encodes a value to data.
     func encode() -> EncodedType
+}
+
+// MARK: - Extensions
+public extension Encodable
+{
+    /**
+    Decodes an `Any?` if possible.
+    
+    - parameter any: The value to decode.
+    
+    - throws: `EncodableError.CouldNotConvertAnyToEncoded`
+    */
+    public static func decodeAny(any: Any?) throws -> Self
+    {
+        if let encoded = any as? EncodedType
+        {
+            return try decode(encoded)
+        }
+        else
+        {
+            throw EncodableError.CouldNotConvertAnyToEncoded
+        }
+    }
+}
+
+// MARK: - Errors
+
+/// Enumerates errors in the Encodable framework.
+public enum EncodableError: Int, ErrorType
+{
+    case CouldNotConvertAnyToEncoded
+    
+    /// The error domain for Encodable errors.
+    public static let Domain = "EncodableErrorDomain"
+    
+    /// The error domain.
+    public var _domain: String
+    {
+        return EncodableError.Domain
+    }
+    
+    /// The error code.
+    public var _code: Int
+    {
+        return self.rawValue
+    }
 }
