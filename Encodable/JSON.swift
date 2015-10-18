@@ -19,7 +19,7 @@ public extension Encodable
     
     - throws: `EncodableError.CouldNotConvertAnyToEncoded`, or any `NSJSONSerialization` error.
     */
-    public static func decodeJSONData(data: NSData) throws -> Self
+    public static func decodeJSONData(data: NSData, options: NSJSONReadingOptions = NSJSONReadingOptions()) throws -> Self
     {
         return try decodeAny(try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()))
     }
