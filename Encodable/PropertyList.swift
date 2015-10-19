@@ -10,8 +10,8 @@
 
 import Foundation
 
-// MARK: - AnyObject
-public extension Encodable
+// MARK: - Decoding
+public extension Decodable
 {
     /**
     Decodes from property list data, if possible.
@@ -44,7 +44,11 @@ public extension Encodable
             format: nil
         ))
     }
-    
+}
+
+// MARK: - Encoding
+public extension Encodable
+{
     /**
     Encodes the data structure as a property list, if possible.
     

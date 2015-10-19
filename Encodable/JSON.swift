@@ -10,7 +10,8 @@
 
 import Foundation
 
-public extension Encodable
+// MARK: - Decoding
+public extension Decodable
 {
     /**
     Decodes from JSON data, if possible.
@@ -23,7 +24,11 @@ public extension Encodable
     {
         return try decodeAny(try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()))
     }
-    
+}
+
+// MARK: - Encoding
+public extension Encodable
+{
     /**
     Encodes the data structure as JSON, if possible.
     
