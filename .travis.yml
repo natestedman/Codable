@@ -1,0 +1,8 @@
+language: objective-c
+xcode_project: Codable.xcodeproj
+xcode_scheme: Codable-OSX
+osx_image: xcode7.1
+before_install: true
+install: true
+git:
+  submodules: false
