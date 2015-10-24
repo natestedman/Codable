@@ -1,4 +1,4 @@
-// Encodable
+// Codable
 // Written in 2015 by Nate Stedman <nate@natestedman.com>
 //
 // To the extent possible under law, the author(s) have dedicated all copyright and
@@ -10,8 +10,8 @@
 
 // MARK: - Errors
 
-/// Enumerates errors in the Encodable framework.
-public enum EncodableError: Int, ErrorType
+/// Enumerates errors in the Codable framework.
+public enum CodableError: Int, ErrorType
 {
     /// Could not convert from `Any?` to the encoded type in `decodeAny(:)`.
     case CouldNotConvertAnyToEncoded
@@ -23,13 +23,13 @@ public enum EncodableError: Int, ErrorType
     /// A Cocoa operation failed, but an error value was not provided.
     case UnknownCocoaError
     
-    /// The error domain for Encodable errors.
-    public static let Domain = "EncodableErrorDomain"
+    /// The error domain for Codable errors.
+    public static let Domain = "CodableErrorDomain"
     
     /// The error domain.
     public var _domain: String
     {
-        return EncodableError.Domain
+        return CodableError.Domain
     }
     
     /// The error code.

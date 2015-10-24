@@ -1,4 +1,4 @@
-// Encodable
+// Codable
 // Written in 2015 by Nate Stedman <nate@natestedman.com>
 //
 // To the extent possible under law, the author(s) have dedicated all copyright and
@@ -30,7 +30,7 @@ public extension Decodable
     
     - parameter any: The value to decode.
     
-    - throws: `EncodableError.CouldNotConvertAnyToEncoded`
+    - throws: `CodableError.CouldNotConvertAnyToEncoded`
     */
     public static func decodeAny(any: Any?) throws -> Self
     {
@@ -40,7 +40,7 @@ public extension Decodable
         }
         else
         {
-            throw EncodableError.CouldNotConvertAnyToEncoded
+            throw CodableError.CouldNotConvertAnyToEncoded
         }
     }
 }

@@ -1,4 +1,4 @@
-// Encodable
+// Codable
 // Written in 2015 by Nate Stedman <nate@natestedman.com>
 //
 // To the extent possible under law, the author(s) have dedicated all copyright and

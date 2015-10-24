@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4399734F1BD3470C0005CEBE"
-               BuildableName = "Encodable.framework"
-               BlueprintName = "Encodable-iOS"
-               ReferencedContainer = "container:Encodable.xcodeproj">
+               BuildableName = "Codable.framework"
+               BlueprintName = "Codable-iOS"
+               ReferencedContainer = "container:Codable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4399734F1BD3470C0005CEBE"
-            BuildableName = "Encodable.framework"
-            BlueprintName = "Encodable-iOS"
-            ReferencedContainer = "container:Encodable.xcodeproj">
+            BuildableName = "Codable.framework"
+            BlueprintName = "Codable-iOS"
+            ReferencedContainer = "container:Codable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4399734F1BD3470C0005CEBE"
-            BuildableName = "Encodable.framework"
-            BlueprintName = "Encodable-iOS"
-            ReferencedContainer = "container:Encodable.xcodeproj">
+            BuildableName = "Codable.framework"
+            BlueprintName = "Codable-iOS"
+            ReferencedContainer = "container:Codable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

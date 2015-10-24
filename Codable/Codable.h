@@ -1,4 +1,4 @@
-// Encodable
+// Codable
 // Written in 2015 by Nate Stedman <nate@natestedman.com>
 //
 // To the extent possible under law, the author(s) have dedicated all copyright and
@@ -8,6 +8,10 @@
 // You should have received a copy of the CC0 Public Domain Dedication along with
 // this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-public protocol Codable: Decodable, Encodable
-{
-}
+@import Foundation;
+
+//! Project version number for Codable.
+FOUNDATION_EXPORT double CodableVersionNumber;
+
+//! Project version string for Codable.
+FOUNDATION_EXPORT const unsigned char CodableVersionString[];

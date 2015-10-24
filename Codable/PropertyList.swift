@@ -1,4 +1,4 @@
-// Encodable
+// Codable
 // Written in 2015 by Nate Stedman <nate@natestedman.com>
 //
 // To the extent possible under law, the author(s) have dedicated all copyright and
@@ -18,7 +18,7 @@ public extension Decodable
     
     - parameter data: The property list data to decode from.
     
-    - throws: `EncodableError.CouldNotConvertAnyToEncoded`, or any `NSPropertyListSerialization` error.
+    - throws: `CodableError.CouldNotConvertAnyToEncoded`, or any `NSPropertyListSerialization` error.
     */
     public static func decodePropertyListData(data: NSData) throws -> Self
     {
@@ -34,7 +34,7 @@ public extension Decodable
     
     - parameter stream: The property list stream to decode from.
     
-    - throws: `EncodableError.CouldNotConvertAnyToEncoded`, or any `NSPropertyListSerialization` error.
+    - throws: `CodableError.CouldNotConvertAnyToEncoded`, or any `NSPropertyListSerialization` error.
     */
     public static func decodePropertyListStream(stream: NSInputStream) throws -> Self
     {
@@ -54,7 +54,7 @@ public extension Encodable
     
     - parameter format: The property list format to use.
     
-    - throws: `EncodableError.CouldNotConvertEncodedToAnyObject`, or any `NSPropertyListSerialization` error.
+    - throws: `CodableError.CouldNotConvertEncodedToAnyObject`, or any `NSPropertyListSerialization` error.
     */
     public func encodePropertyListDataWithFormat(format: NSPropertyListFormat) throws -> NSData
     {
@@ -64,7 +64,7 @@ public extension Encodable
         }
         else
         {
-            throw EncodableError.CouldNotConvertEncodedToAnyObject
+            throw CodableError.CouldNotConvertEncodedToAnyObject
         }
     }
     
@@ -74,7 +74,7 @@ public extension Encodable
     - parameter stream: The output stream to write to.
     - parameter format: The property list format to use.
     
-    - throws: `EncodableError.CouldNotConvertEncodedToAnyObject`, `CouldNotConvertEncodedToAnyObject.UnknownCocoaError,
+    - throws: `CodableError.CouldNotConvertEncodedToAnyObject`, `CouldNotConvertEncodedToAnyObject.UnknownCocoaError,
                or any `NSPropertyListSerialization` error.
     */
     public func encodePropertyListDataToStream(stream: NSOutputStream, withFormat format: NSPropertyListFormat) throws -> Int
@@ -93,7 +93,7 @@ public extension Encodable
             
             if bytes == 0
             {
-                throw error ?? EncodableError.UnknownCocoaError
+                throw error ?? CodableError.UnknownCocoaError
             }
             else
             {
@@ -102,7 +102,7 @@ public extension Encodable
         }
         else
         {
-            throw EncodableError.CouldNotConvertEncodedToAnyObject
+            throw CodableError.CouldNotConvertEncodedToAnyObject
         }
     }
 }

@@ -1,4 +1,4 @@
-// Encodable
+// Codable
 // Written in 2015 by Nate Stedman <nate@natestedman.com>
 //
 // To the extent possible under law, the author(s) have dedicated all copyright and
@@ -18,7 +18,7 @@ public extension Decodable
     
     - parameter data: The data to decode from.
     
-    - throws: `EncodableError.CouldNotConvertAnyToEncoded`, or any `NSJSONSerialization` error.
+    - throws: `CodableError.CouldNotConvertAnyToEncoded`, or any `NSJSONSerialization` error.
     */
     public static func decodeJSONData(data: NSData, options: NSJSONReadingOptions = NSJSONReadingOptions()) throws -> Self
     {
@@ -34,7 +34,7 @@ public extension Encodable
     
     - parameter options: The JSON writing options to use. By default, no options are enabled.
     
-    - throws: `EncodableError.CouldNotConvertEncodedToAnyObject`, or any `NSJSONSerialization` error.
+    - throws: `CodableError.CouldNotConvertEncodedToAnyObject`, or any `NSJSONSerialization` error.
     */
     public func encodeJSONData(options: NSJSONWritingOptions = NSJSONWritingOptions()) throws -> NSData
     {
@@ -44,7 +44,7 @@ public extension Encodable
         }
         else
         {
-            throw EncodableError.CouldNotConvertEncodedToAnyObject
+            throw CodableError.CouldNotConvertEncodedToAnyObject
         }
     }
 }

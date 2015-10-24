@@ -13,12 +13,12 @@
 		430B2CC91BD5A82100508258 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC41BD5A76B00508258 /* Decodable.swift */; settings = {ASSET_TAGS = (); }; };
 		439973481BD33F360005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
 		4399734A1BD345920005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
-		439973581BD347AB0005CEBE /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439973581BD347AB0005CEBE /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439973591BD347AB0005CEBE /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
 		4399735A1BD347AB0005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
 		4399735B1BD347AB0005CEBE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
 		4399735C1BD347AB0005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
-		43B42F341BD3186600D84094 /* Encodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Encodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B42F341BD3186600D84094 /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
 		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -28,9 +28,9 @@
 		430B2CC61BD5A7CA00508258 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		439973471BD33F360005CEBE /* PropertyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
 		439973491BD345920005CEBE /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		439973501BD3470C0005CEBE /* Encodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43B42F301BD3186600D84094 /* Encodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43B42F331BD3186600D84094 /* Encodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encodable.h; sourceTree = "<group>"; };
+		439973501BD3470C0005CEBE /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B42F301BD3186600D84094 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B42F331BD3186600D84094 /* Codable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Codable.h; sourceTree = "<group>"; };
 		43B42F351BD3186600D84094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B42F3B1BD319FC00D84094 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		43B9C5611BD33D8C00DD14A2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		43B42F261BD3186600D84094 = {
 			isa = PBXGroup;
 			children = (
-				43B42F321BD3186600D84094 /* Encodable */,
+				43B42F321BD3186600D84094 /* Codable */,
 				43B42F311BD3186600D84094 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,16 +65,16 @@
 		43B42F311BD3186600D84094 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43B42F301BD3186600D84094 /* Encodable.framework */,
-				439973501BD3470C0005CEBE /* Encodable.framework */,
+				43B42F301BD3186600D84094 /* Codable.framework */,
+				439973501BD3470C0005CEBE /* Codable.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43B42F321BD3186600D84094 /* Encodable */ = {
+		43B42F321BD3186600D84094 /* Codable */ = {
 			isa = PBXGroup;
 			children = (
-				43B42F331BD3186600D84094 /* Encodable.h */,
+				43B42F331BD3186600D84094 /* Codable.h */,
 				430B2CC61BD5A7CA00508258 /* Codable.swift */,
 				430B2CC41BD5A76B00508258 /* Decodable.swift */,
 				43B42F3B1BD319FC00D84094 /* Encodable.swift */,
@@ -83,7 +83,7 @@
 				439973471BD33F360005CEBE /* PropertyList.swift */,
 				43B42F351BD3186600D84094 /* Info.plist */,
 			);
-			path = Encodable;
+			path = Codable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439973581BD347AB0005CEBE /* Encodable.h in Headers */,
+				439973581BD347AB0005CEBE /* Codable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,16 +101,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B42F341BD3186600D84094 /* Encodable.h in Headers */,
+				43B42F341BD3186600D84094 /* Codable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4399734F1BD3470C0005CEBE /* Encodable-iOS */ = {
+		4399734F1BD3470C0005CEBE /* Codable-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 439973551BD3470C0005CEBE /* Build configuration list for PBXNativeTarget "Encodable-iOS" */;
+			buildConfigurationList = 439973551BD3470C0005CEBE /* Build configuration list for PBXNativeTarget "Codable-iOS" */;
 			buildPhases = (
 				4399734B1BD3470C0005CEBE /* Sources */,
 				4399734C1BD3470C0005CEBE /* Frameworks */,
@@ -121,14 +121,14 @@
 			);
 			dependencies = (
 			);
-			name = "Encodable-iOS";
-			productName = Encodable;
-			productReference = 439973501BD3470C0005CEBE /* Encodable.framework */;
+			name = "Codable-iOS";
+			productName = Codable;
+			productReference = 439973501BD3470C0005CEBE /* Codable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		43B42F2F1BD3186600D84094 /* Encodable-OSX */ = {
+		43B42F2F1BD3186600D84094 /* Codable-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable-OSX" */;
+			buildConfigurationList = 43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Codable-OSX" */;
 			buildPhases = (
 				43B42F2B1BD3186600D84094 /* Sources */,
 				43B42F2C1BD3186600D84094 /* Frameworks */,
@@ -139,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = "Encodable-OSX";
-			productName = Encodable;
-			productReference = 43B42F301BD3186600D84094 /* Encodable.framework */;
+			name = "Codable-OSX";
+			productName = Codable;
+			productReference = 43B42F301BD3186600D84094 /* Codable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 43B42F2A1BD3186600D84094 /* Build configuration list for PBXProject "Encodable" */;
+			buildConfigurationList = 43B42F2A1BD3186600D84094 /* Build configuration list for PBXProject "Codable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -174,8 +174,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43B42F2F1BD3186600D84094 /* Encodable-OSX */,
-				4399734F1BD3470C0005CEBE /* Encodable-iOS */,
+				43B42F2F1BD3186600D84094 /* Codable-OSX */,
+				4399734F1BD3470C0005CEBE /* Codable-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -235,12 +235,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Encodable/Info.plist;
+				INFOPLIST_FILE = Codable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
-				PRODUCT_NAME = Encodable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Codable;
+				PRODUCT_NAME = Codable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -255,12 +255,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Encodable/Info.plist;
+				INFOPLIST_FILE = Codable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
-				PRODUCT_NAME = Encodable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Codable;
+				PRODUCT_NAME = Codable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,11 +362,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Encodable/Info.plist;
+				INFOPLIST_FILE = Codable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
-				PRODUCT_NAME = Encodable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Codable;
+				PRODUCT_NAME = Codable;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -382,11 +382,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Encodable/Info.plist;
+				INFOPLIST_FILE = Codable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Encodable;
-				PRODUCT_NAME = Encodable;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Codable;
+				PRODUCT_NAME = Codable;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -394,7 +394,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		439973551BD3470C0005CEBE /* Build configuration list for PBXNativeTarget "Encodable-iOS" */ = {
+		439973551BD3470C0005CEBE /* Build configuration list for PBXNativeTarget "Codable-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				439973561BD3470C0005CEBE /* Debug */,
@@ -403,7 +403,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43B42F2A1BD3186600D84094 /* Build configuration list for PBXProject "Encodable" */ = {
+		43B42F2A1BD3186600D84094 /* Build configuration list for PBXProject "Codable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43B42F361BD3186600D84094 /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Encodable-OSX" */ = {
+		43B42F381BD3186600D84094 /* Build configuration list for PBXNativeTarget "Codable-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43B42F391BD3186600D84094 /* Debug */,
