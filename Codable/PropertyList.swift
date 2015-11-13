@@ -13,6 +13,8 @@ import Foundation
 // MARK: - Decoding
 public extension Decodable
 {
+    // MARK: - Property Lists
+    
     /**
     Decodes from property list data, if possible.
     
@@ -49,6 +51,8 @@ public extension Decodable
 // MARK: - Encoding
 public extension Encodable
 {
+    // MARK: - Property Lists
+    
     /**
     Encodes the data structure as a property list, if possible.
     
