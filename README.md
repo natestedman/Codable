@@ -20,6 +20,17 @@ Or:
 
 To your type to conform (or both).
 
+## Documentation
+If necessary, install `jazzy`:
+
+    gem install jazzy
+   
+Then run:
+
+    make docs
+
+To generate HTML documentation in the `Documentation` subdirectory.
+
 ## Installation
 
 Add:
