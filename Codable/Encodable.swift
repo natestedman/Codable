@@ -13,8 +13,12 @@
 /// A protocol that data structures can use to encode themselves.
 public protocol Encodable
 {
+    // MARK: - Encoded Type
+    
     /// The type that the data structure encodes to.
     typealias Encoded
+    
+    // MARK: - Encoding
     
     /// Encodes a value to the encoded type.
     func encode() -> Encoded
