@@ -24,12 +24,12 @@ public enum CodableError: Int, ErrorType
     case UnknownCocoaError
     
     /// The error domain for Codable errors.
-    public static let Domain = "CodableErrorDomain"
+    public static let domain = "CodableErrorDomain"
     
     /// The error domain.
     public var _domain: String
     {
-        return CodableError.Domain
+        return CodableError.domain
     }
     
     /// The error code.
