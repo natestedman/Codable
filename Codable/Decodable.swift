@@ -11,8 +11,12 @@
 /// A protocol that data structures can use to decode themselves.
 public protocol Decodable
 {
+    // MARK: - Encoded Type
+    
     /// The type that the data structure decodes from.
     typealias Encoded
+    
+    // MARK: - Decoding
     
     /**
     Decodes a value, if possible.
@@ -25,6 +29,8 @@ public protocol Decodable
 // MARK: - Extensions
 public extension Decodable
 {
+    // MARK: - Any
+    
     /**
     Decodes an `Any?` if possible.
     
