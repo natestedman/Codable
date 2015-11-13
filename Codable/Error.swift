@@ -13,6 +13,8 @@
 /// Enumerates errors in the Codable framework.
 public enum CodableError: Int, ErrorType
 {
+    // MARK: - Cases
+    
     /// Could not convert from `Any?` to the encoded type in `decodeAny(:)`.
     case CouldNotConvertAnyToEncoded
     
@@ -23,8 +25,12 @@ public enum CodableError: Int, ErrorType
     /// A Cocoa operation failed, but an error value was not provided.
     case UnknownCocoaError
     
+    // MARK: - Domain
+    
     /// The error domain for Codable errors.
     public static let domain = "CodableErrorDomain"
+    
+    // MARK: - ErrorType
     
     /// The error domain.
     public var _domain: String
