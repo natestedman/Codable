@@ -13,6 +13,8 @@ import Foundation
 // MARK: - Decoding
 public extension Decodable
 {
+    // MARK: - JSON
+    
     /**
     Decodes from JSON data, if possible.
     
@@ -29,6 +31,8 @@ public extension Decodable
 // MARK: - Encoding
 public extension Encodable
 {
+    // MARK: - JSON
+    
     /**
     Encodes the data structure as JSON, if possible.
     
