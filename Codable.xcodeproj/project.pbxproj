@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		430B2CC51BD5A76B00508258 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC41BD5A76B00508258 /* Decodable.swift */; settings = {ASSET_TAGS = (); }; };
-		430B2CC71BD5A7CA00508258 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC61BD5A7CA00508258 /* Codable.swift */; settings = {ASSET_TAGS = (); }; };
-		430B2CC81BD5A7CA00508258 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC61BD5A7CA00508258 /* Codable.swift */; settings = {ASSET_TAGS = (); }; };
-		430B2CC91BD5A82100508258 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC41BD5A76B00508258 /* Decodable.swift */; settings = {ASSET_TAGS = (); }; };
-		439973481BD33F360005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
-		4399734A1BD345920005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
+		430B2CC51BD5A76B00508258 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC41BD5A76B00508258 /* Decodable.swift */; };
+		430B2CC71BD5A7CA00508258 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC61BD5A7CA00508258 /* Codable.swift */; };
+		430B2CC81BD5A7CA00508258 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC61BD5A7CA00508258 /* Codable.swift */; };
+		430B2CC91BD5A82100508258 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B2CC41BD5A76B00508258 /* Decodable.swift */; };
+		439973481BD33F360005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; };
+		4399734A1BD345920005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; };
 		439973581BD347AB0005CEBE /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		439973591BD347AB0005CEBE /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
-		4399735A1BD347AB0005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; settings = {ASSET_TAGS = (); }; };
-		4399735B1BD347AB0005CEBE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
-		4399735C1BD347AB0005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; settings = {ASSET_TAGS = (); }; };
+		439973591BD347AB0005CEBE /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; };
+		4399735A1BD347AB0005CEBE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973491BD345920005CEBE /* Error.swift */; };
+		4399735B1BD347AB0005CEBE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; };
+		4399735C1BD347AB0005CEBE /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439973471BD33F360005CEBE /* PropertyList.swift */; };
 		43B42F341BD3186600D84094 /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; settings = {ASSET_TAGS = (); }; };
-		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
+		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; };
+		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,15 +75,39 @@
 			isa = PBXGroup;
 			children = (
 				43B42F331BD3186600D84094 /* Codable.h */,
-				430B2CC61BD5A7CA00508258 /* Codable.swift */,
-				430B2CC41BD5A76B00508258 /* Decodable.swift */,
-				43B42F3B1BD319FC00D84094 /* Encodable.swift */,
-				439973491BD345920005CEBE /* Error.swift */,
-				43B9C5611BD33D8C00DD14A2 /* JSON.swift */,
-				439973471BD33F360005CEBE /* PropertyList.swift */,
+				43E52EFD1C0B3ADD00E00A59 /* Extensions */,
+				43E52EFC1C0B3AD800E00A59 /* Protocols */,
+				43E52EFE1C0B3AE800E00A59 /* Utilities */,
 				43B42F351BD3186600D84094 /* Info.plist */,
 			);
 			path = Codable;
+			sourceTree = "<group>";
+		};
+		43E52EFC1C0B3AD800E00A59 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				430B2CC61BD5A7CA00508258 /* Codable.swift */,
+				430B2CC41BD5A76B00508258 /* Decodable.swift */,
+				43B42F3B1BD319FC00D84094 /* Encodable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		43E52EFD1C0B3ADD00E00A59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43B9C5611BD33D8C00DD14A2 /* JSON.swift */,
+				439973471BD33F360005CEBE /* PropertyList.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		43E52EFE1C0B3AE800E00A59 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				439973491BD345920005CEBE /* Error.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
