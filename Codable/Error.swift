@@ -8,6 +8,8 @@
 // You should have received a copy of the CC0 Public Domain Dedication along with
 // this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
+import class Foundation.NSError
+
 // MARK: - Errors
 
 /// Enumerates errors in the Codable framework.
@@ -24,12 +26,27 @@ public enum CodableError: Int, ErrorType
     
     /// A Cocoa operation failed, but an error value was not provided.
     case UnknownCocoaError
-    
-    // MARK: - Domain
+}
+
+extension CodableError
+{
+    // MARK: - NSError Representation
     
     /// The error domain for Codable errors.
     public static let domain = "CodableErrorDomain"
-    
+
+    /// The error code.
+    public var code: Int { return rawValue }
+
+    /// An `NSError` representation of the receiver.
+    public var NSError: Foundation.NSError
+    {
+        return Foundation.NSError(domain: CodableError.domain, code: code, userInfo: nil)
+    }
+}
+
+extension CodableError
+{
     // MARK: - ErrorType
     
     /// The error domain.
@@ -41,6 +58,6 @@ public enum CodableError: Int, ErrorType
     /// The error code.
     public var _code: Int
     {
-        return self.rawValue
+        return code
     }
 }
