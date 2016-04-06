@@ -21,8 +21,6 @@
 		43B42F341BD3186600D84094 /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B42F331BD3186600D84094 /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B42F3B1BD319FC00D84094 /* Encodable.swift */; };
 		43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9C5611BD33D8C00DD14A2 /* JSON.swift */; };
-		43E52F001C0B3B6A00E00A59 /* CodingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E52EFF1C0B3B6A00E00A59 /* CodingValue.swift */; };
-		43E52F011C0B3B6A00E00A59 /* CodingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E52EFF1C0B3B6A00E00A59 /* CodingValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +34,6 @@
 		43B42F351BD3186600D84094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B42F3B1BD319FC00D84094 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		43B9C5611BD33D8C00DD14A2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		43E52EFF1C0B3B6A00E00A59 /* CodingValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodingValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +105,6 @@
 		43E52EFE1C0B3AE800E00A59 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				43E52EFF1C0B3B6A00E00A59 /* CodingValue.swift */,
 				439973491BD345920005CEBE /* Error.swift */,
 			);
 			name = Utilities;
@@ -233,7 +229,6 @@
 				4399735B1BD347AB0005CEBE /* JSON.swift in Sources */,
 				4399735A1BD347AB0005CEBE /* Error.swift in Sources */,
 				4399735C1BD347AB0005CEBE /* PropertyList.swift in Sources */,
-				43E52F011C0B3B6A00E00A59 /* CodingValue.swift in Sources */,
 				430B2CC91BD5A82100508258 /* Decodable.swift in Sources */,
 				430B2CC81BD5A7CA00508258 /* Codable.swift in Sources */,
 				439973591BD347AB0005CEBE /* Encodable.swift in Sources */,
@@ -247,7 +242,6 @@
 				4399734A1BD345920005CEBE /* Error.swift in Sources */,
 				43B42F3C1BD319FC00D84094 /* Encodable.swift in Sources */,
 				430B2CC71BD5A7CA00508258 /* Codable.swift in Sources */,
-				43E52F001C0B3B6A00E00A59 /* CodingValue.swift in Sources */,
 				43B9C5621BD33D8C00DD14A2 /* JSON.swift in Sources */,
 				430B2CC51BD5A76B00508258 /* Decodable.swift in Sources */,
 				439973481BD33F360005CEBE /* PropertyList.swift in Sources */,
