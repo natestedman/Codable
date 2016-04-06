@@ -14,7 +14,7 @@ public protocol Decodable
     // MARK: - Encoded Type
     
     /// The type that the data structure decodes from.
-    typealias Encoded
+    associatedtype Encoded
     
     // MARK: - Decoding
     
